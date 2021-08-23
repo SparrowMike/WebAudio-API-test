@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/posts.css" />
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/CSS/posts.css" />
+    <link rel="stylesheet" href="/CSS/main.css" />
     <title>Posts</title>
   </head>
   <body>
@@ -39,15 +39,13 @@
         const showAccending = (a, b) => {
           accending ? setDescending(true) : setDescending(false);
           setAccending(!accending);
-          console.log(accending);
         };
 
         const showDescending = (a, b) => {
           descending ? setAccending(true) : setAccending(false);
           setDescending(!descending);
-          console.log(descending);
         };
-        console.log(data);
+
         return (
           <>
             <div className="header">
@@ -57,7 +55,7 @@
                   <button onClick={fetchData}>Show Posts</button>
                   <a
                     style={{ width: "auto" }}
-                    href="/audio.html"
+                    href="/app.html"
                     style={{ textDecoration: "none" }}
                   >
                     <button>Go to Audio</button>
